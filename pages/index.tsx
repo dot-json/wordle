@@ -91,7 +91,12 @@ const Home: NextPage = () => {
           />
         </Container>
         <Container>
-          <Keyboard triggerKey={triggerKey} />
+          <Keyboard
+            triggerKey={triggerKey}
+            entries={entries}
+            solution={solution}
+            currentRow={currentRow}
+          />
         </Container>
       </Wrapper>
       <AnimatePresence mode="wait">
